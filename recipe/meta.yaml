@@ -1,5 +1,5 @@
 {% set name = "facadedevice" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/facadedevice-{{ version }}.tar.gz
-  sha256: 0b8a4d11eb56d4eb4384026908259cb3f7e36e45b84430cc245b94946a05b36d
+  sha256: 77dfae1ad62ff063fc19a8911d2672e972efb74e291ecc44d3f837ffefc03aee
 
 build:
   noarch: python
