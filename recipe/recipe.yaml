@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: facadedevice
-  version: 1.0.7
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/facadedevice-${{ version }}.tar.gz
-  sha256: 77dfae1ad62ff063fc19a8911d2672e972efb74e291ecc44d3f837ffefc03aee
+  sha256: 8a5a5c06bc607338a80aadbca2d34045eaeef526c8bc38100a30460224849f62
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
